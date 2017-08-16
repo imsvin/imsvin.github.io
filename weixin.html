@@ -3,17 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<title>微信弹出遮罩</title>
+	<link rel="stylesheet" href="css/style.css"/>
+
 </head>
 <body>
+	<h3>Lois连连看</h3>
 	<style type="text/css">
 	*{margin:0; padding:0;}
 	img{max-width: 100%; height: auto;}
-	.test{height: 600px; max-width: 600px; font-size: 40px;}
+	/*.test{height: 600px; max-width: 600px; font-size: 40px;}*/
 	</style>
 	<div class="test">
-		这个就是你打开浏览器后看到的内容了。如果你是用微信打开的话，会弹出一个提示，要求你在浏览器中打开。打开之后你就可以看到这些内容改了。
+		
 	</div>
+
+	<ul class="game">
+
+	</ul>
+	<script src="js/display.js"></script>
+	<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript">
 		function is_weixin() {
 		    var ua = navigator.userAgent.toLowerCase();
@@ -33,6 +41,7 @@
 			document.body.appendChild(div);
 		}
 		
+
 		function loadStyleText(cssText) {
 	        var style = document.createElement('style');
 	        style.rel = 'stylesheet';
@@ -49,6 +58,8 @@
 		if(isWeixin){
 			loadHtml();
 			loadStyleText(cssText);
+		} else {
+			var game=new LinkGame(10,10,4,80,$(".game"))
 		}
 	</script>
 

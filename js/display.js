@@ -209,15 +209,9 @@ LinkGame.prototype={
 
 }
 
-var game=new LinkGame(10,10,4,80,$(".game"))
 
-$("#setgame").click(function(e){
-    e.preventDefault(); 
-    $(".game").html("");
-    console.log($("#num_V").val()+","+$("#num_h").val()+","+$("#again").val()+","+$("#percent").val())
-    var g=new LinkGame($("#num_V").val(),$("#num_h").val(),$("#again").val(),$("#percent").val(),$(".game"))
-    
-})
+
+
 
 
 
