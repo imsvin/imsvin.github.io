@@ -41,7 +41,7 @@
 			document.body.appendChild(div);
 		}
 		
-		function loadHtml(){
+		function loadCss(){
 			var div = document.createElement('div');
 			div.innerHTML = '<link rel="stylesheet" href="css/style.css"/>';
 			document.body.appendChild(div);
@@ -65,7 +65,7 @@
 			loadHtml();
 			loadStyleText(cssText);
 		} else {
-			loadHtml();
+			loadCss();
 			var game=new LinkGame(10,10,4,80,$(".game"))
 		}
 			
