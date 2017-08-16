@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<link rel="stylesheet" href="css/style.css"/>
+
 
 </head>
 <body>
@@ -41,6 +41,12 @@
 			document.body.appendChild(div);
 		}
 		
+		function loadHtml(){
+			var div = document.createElement('div');
+			div.innerHTML = '<link rel="stylesheet" href="css/style.css"/>';
+			document.body.appendChild(div);
+		}
+
 
 		function loadStyleText(cssText) {
 	        var style = document.createElement('style');
@@ -59,8 +65,10 @@
 			loadHtml();
 			loadStyleText(cssText);
 		} else {
+			loadHtml();
 			var game=new LinkGame(10,10,4,80,$(".game"))
 		}
+			
 	</script>
 
 </body>
