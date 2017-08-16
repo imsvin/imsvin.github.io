@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+body{ margin: 0; padding:0;}
+.control{ width: 1000px; margin: 20px auto; text-align: center;}
+.control input{ width: 40px; text-align: center;}
+.control span{ font-size:12px; color: #999;}
+h3{ text-align: center;}
+.game{ width: 1000px; height: 600px; margin: 0 auto; background:url("../images/bg.png") 10px 10px;  padding:10px; position: relative; }
+.game li{ width:80px; height:80px; background: url("../images/gamebg.png"); list-style: none; float: left; position: relative;}
+.game li i{ display: none;}
+.game li.active i{ display:block; border:solid 2px #c00; position: absolute; top:0;left: 0; width:76px; height:76px;}
+.game li.list0{background: none;}
+.game li.list1{background:url("../images/lois/1.jpg");}
+.game li.list2{background:url("../images/lois/2.jpg");}
+.game li.list3{background:url("../images/lois/3.jpg");}
+.game li.list4{background:url("../images/lois/4.jpg");}
+.game li.list5{background:url("../images/lois/5.jpg");}
+.game li.list6{background:url("../images/lois/6.jpg");}
+.game li.list7{background:url("../images/lois/7.jpg");}
+.game li.list8{background:url("../images/lois/8.jpg");}
+.game li.list9{background:url("../images/lois/9.jpg");}
+.game li.list10{background:url("../images/lois/10.jpg");}
+.game li.list11{background:url("../images/lois/11.jpg");}
+.game li.list12{background:url("../images/lois/12.jpg");}
+.game li.list13{background:url("../images/lois/13.jpg");}
+.game li.list14{background:url("../images/lois/14.jpg");}
+.game li.list15{background:url("../images/lois/15.jpg");}
+.game li.list16{background:url("../images/lois/16.jpg");}
+.game li.list17{background:url("../images/lois/17.jpg");}
+.game li.list18{background:url("../images/lois/18.jpg");}
+.game li.list19{background:url("../images/lois/19.jpg");}
+.game li.list20{background:url("../images/lois/20.jpg");}
+.game li.line{ position: absolute; top:-2px; left: -2px; width: 0; height: 0; background:#c00; }
