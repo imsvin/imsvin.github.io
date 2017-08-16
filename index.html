@@ -1,21 +1,88 @@
+
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Lois LianLian Look</title>
-    <link rel="stylesheet" href="css/style.css"/>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Daisy花园</title>
+<!-- 设置head 引用的css文件-->
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/duoshuo.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="canonical" href="http://daisyhawen.github.io/">
+  <link rel="alternate" type="application/rss+xml" title="Daisy花园" href="http://daisyhawen.github.io/feed.xml">
 </head>
+
+
 <body>
-<h3></h3>
+    <!-- 必须指定content 模版才会把file.html的内容渲染进来 -->
+    <div class="container">
+        <section class="content">
+    <h1>Daisy Garden</h1>
+    <div class="words">&nbsp</div>
+    <div class="btns">
+        <a href="/about/" class="btn btn-default">profile</a>
+        <a href="/blog/" class="btn btn-default">blogs</a>
+        <a href="/albums/" class="btn btn-default">albums</a>
+        <a href="/project/" class="btn btn-default">Skills</a>
+        <a href="/resume.html" class="btn btn-default">Resume</a>
 
-<ul class="game">
+    </div>
+    <div class="link">
+        <p>@daisyHawen</p>
+        <a href="http://github.com/daisyHawen"><i class="fa fa-github"></i>Git</a>
+        <a href="https://www.zhihu.com/people/hawintion">@知乎</a>
+    </div>
+</section>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<style>
+.content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    text-align: center;
+}
 
-</ul>
-<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/display.js"></script>
-<script type="text/javascript">
-		var game=new LinkGame(10,10,4,80,$(".game"))
+.words {
+    height: 100px;
+    line-height: 100px;
+}
+
+.link {
+    margin-top: 10px;
+}
+</style>
+<script>
+var s = '欢迎来到我的博客';
+var con = $('.words');
+var index = 0;
+var length = s.length;
+var tId = null;
+
+function start() {
+    con.text('');
+
+    tId = setInterval(function() {
+        con.append(s.charAt(index));
+        if (index++ === length) {
+            clearInterval(tId);
+            index = 0;
+            start()
+        }
+    }, 300);
+}
+
+start();
 </script>
-<!-- <script src="js/control.js"></script> -->
+
+    </div>
 </body>
+<footer></footer>
 </html>
